@@ -1,15 +1,13 @@
-.App {
-  text-align: center;
-}
-
 .App-logo {
-  animation: App-logo-spin infinite 20s linear;
+  animation: App-logo-spin infinite 5s linear;
   height: 40vmin;
   pointer-events: none;
+  font-size: larger;
+  color: red;
 }
 
 .App-header {
-  background-color: #282c34;
+  background-image: "/home/shitiz/Pictures/x.png";
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -19,10 +17,6 @@
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -30,4 +24,7 @@
   to {
     transform: rotate(360deg);
   }
+}
+.App-link {
+  color: rgb(145, 56, 141);
 }
