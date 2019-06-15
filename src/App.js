@@ -4,20 +4,22 @@ import "./App.css";
 import Person from "./Person/Person";
 class App extends React.Component {
   state = {
-    persons: [
-      {
-        name: "Max",
-        age: 26
-      },
-      {
-        name: "Stephanie",
-        age: 28
-      },
-      {
-        name: "Sony",
-        age: 29
-      }
-    ]
+    data: "boi",
+    click: false
+  };
+  clickHandler = () => {
+    if (this.state.click === false) {
+      this.setState({
+        data: "bingo",
+        click: true
+      });
+    }
+    if (this.state.click === true) {
+      this.setState({
+        data: "boi",
+        click: false
+      });
+    }
   };
   render() {
     return (
@@ -32,16 +34,16 @@ class App extends React.Component {
           </p>
 
           <p>
-            Edit <code>src/App.js</code> and save to reload.
+            Edit <code>{this.state.data}</code> and save to reload.
           </p>
-          <button>Go</button>
+          <button onClick={this.clickHandler}>Go</button>
           <a
             className="App-link"
             href="https://reactjs.org"
             target="_blank"
             rel="noopener noreferrer"
           />
-          <Person />
+          <Person name="Max" />
         </header>
       </div>
     );

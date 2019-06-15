@@ -5,6 +5,13 @@
   font-size: larger;
   color: red;
 }
+.App-logo1 {
+  animation: App-logo-spin infinite 5s linear;
+  height: 30vmin;
+  pointer-events: painted;
+  font-size: x-large;
+  color: #ffff33;
+}
 
 .App-header {
   background-image: "/home/shitiz/Pictures/x.png";

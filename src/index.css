@@ -1,15 +1,6 @@
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New";
 }
-p {
-  color: aqua;
-  font-family: Georgia, "Times New Roman", Times, serif;
-  padding-block: 4cm rgb(141, 33, 33);
-  margin-block: black;
-  text-shadow: aqua 3cm;
-  background-color: black;
-  text-align: right;
-}
 div {
   color: aqua;
 }
