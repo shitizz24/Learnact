@@ -4,22 +4,35 @@ import "./App.css";
 import Person from "./Person/Person";
 class App extends React.Component {
   state = {
-    data: "boi",
-    click: false
+    data: ":(",
+    click: false,
+    name: "squidward"
   };
   clickHandler = () => {
     if (this.state.click === false) {
       this.setState({
-        data: "bingo",
+        data: "^_^",
         click: true
       });
     }
     if (this.state.click === true) {
       this.setState({
-        data: "boi",
+        data: ":p",
         click: false
       });
     }
+  };
+  namehandler = events => {
+    const name = events.target.value;
+    if (!name) {
+      this.setState({
+        name: "Squidward"
+      });
+      return;
+    }
+    this.setState({
+      name: name
+    });
   };
   render() {
     return (
@@ -33,9 +46,7 @@ class App extends React.Component {
             />
           </p>
 
-          <p>
-            Edit <code>{this.state.data}</code> and save to reload.
-          </p>
+          <p>Click "Go" and see the magic!!{this.state.data}</p>
           <button onClick={this.clickHandler}>Go</button>
           <a
             className="App-link"
@@ -43,7 +54,7 @@ class App extends React.Component {
             target="_blank"
             rel="noopener noreferrer"
           />
-          <Person name="Max" />
+          <Person name={this.state.name} change={this.namehandler} />
         </header>
       </div>
     );

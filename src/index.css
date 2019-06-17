@@ -5,12 +5,16 @@ div {
   color: aqua;
 }
 body {
-  background-color: purple;
+  background-color: teal;
 }
 button {
+  margin: 20px;
   background-color: white;
   color: red;
-  border: 2px solid #008cba;
+  border: 5px solid #008cba;
+  font-size: x-large;
+  border-radius: 2cm;
+  padding: 5px 30px;
 }
 
 /*button on hover*/
@@ -18,4 +22,12 @@ button {
 button:hover {
   background-color: #008cba;
   color: white;
+}
+input[type="text"] {
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+}
+
+input[type="text"]:focus {
+  width: 100%;
 }

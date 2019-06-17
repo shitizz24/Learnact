@@ -1,0 +1,30 @@
+.clock-pos {
+  color: cyan;
+  border-block-end-width: 2px solid white;
+  position: absolute;
+  top: 0.5%;
+  right: 0;
+  background-color: black;
+  margin: 20 px auto;
+  padding: 16px;
+  text-align: center;
+  background: #2db34a;
+  border-radius: 4cm;
+}
+.name-pos {
+  position: absolute;
+  top: 15%;
+  left: 10%;
+}
+.enter-style {
+  border-radius: 4cm;
+  background-color: burlywood;
+  font-style: italic;
+  font-variant: normal;
+}
+
+.derive-pos {
+  position: absolute;
+  top: 7%;
+  left: 0%;
+}

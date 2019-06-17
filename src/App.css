@@ -1,18 +1,17 @@
 .App-logo {
   animation: App-logo-spin infinite 5s linear;
-  height: 40vmin;
+  height: 8vmin;
   pointer-events: none;
   font-size: larger;
   color: red;
+  position: absolute;
+  top: 0%;
+  left: 0.1%;
 }
 .App-logo1 {
-  animation: App-logo-spin infinite 5s linear;
-  height: 30vmin;
-  pointer-events: painted;
-  font-size: x-large;
-  color: #ffff33;
+  color: yellowgreen;
+  cursor: grab;
 }
-
 .App-header {
   background-image: "/home/shitiz/Pictures/x.png";
   min-height: 100vh;
