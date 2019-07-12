@@ -32,6 +32,14 @@
 }
 .App-logo1 {
   border: 2px solid black;
-  box-shadow: red;
+  box-shadow: cyan;
+  background-color: yellow;
+  border-radius: 0cm;
   color: blueviolet;
+  text-align: inherit;
+}
+.App-logo1:hover {
+  color: azure;
+  background-color: darkgoldenrod;
+  cursor: -webkit-grabbing;
 }

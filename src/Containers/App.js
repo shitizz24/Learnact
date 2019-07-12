@@ -12,7 +12,8 @@ class App extends React.Component {
       { id: "1", skill: "C++", type: "Programming" },
       { id: "2", skill: "NodeJS", type: "Web Development" },
       { id: "3", skill: "Deep Learning", type: "ML" }
-    ]
+    ],
+    new_skill: " "
   };
   clickHandler = () => {
     if (this.state.click === false) {
@@ -51,6 +52,30 @@ class App extends React.Component {
       toggle: !inverter
     });
   };
+
+  inputskill = event => {
+    const entry = event.target.value;
+    this.setState({
+      new_skill: entry
+    });
+  };
+  skillsadder = () => {
+    const trial = this.state.new_skill;
+    console.log({ trial });
+    const array = [...this.state.dataset];
+    const newentry = {
+      id: this.state.dataset.length + 1,
+      skill: "Arbitary",
+      type: this.state.new_skill
+    };
+    array.push(newentry);
+    console.log({ array });
+
+    this.setState({
+      dataset: array
+    });
+  };
+
   render() {
     let toggled = null;
     if (this.state.toggle === true) {
@@ -63,6 +88,8 @@ class App extends React.Component {
           smiley={this.state.data}
           clicked={this.clickHandler}
           show={toggled}
+          clicked2={this.skillsadder}
+          skillinput={this.inputskill}
         />
       </div>
     );

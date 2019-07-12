@@ -1,4 +1,5 @@
 import React from "react";
+import SkillsAdder from "./SkillsAddder";
 const cockpit = props => (
   <header className="App-header">
     <p>
@@ -11,7 +12,11 @@ const cockpit = props => (
     <button onClick={props.toggle}>Toggle</button>
     <p>Click "Go" and see the magic!!{props.smiley}</p>
     <button onClick={props.clicked}>Go</button>
-    {props.show}
+    <div className="skills">
+      <code>Your skills :</code>
+      {props.show}
+    </div>
+    <SkillsAdder change={props.skillinput} addskills={props.clicked2} />
   </header>
 );
 

@@ -9,7 +9,6 @@
   left: 0.1%;
 }
 
-
 .App-header {
   background-image: "/home/shitiz/Pictures/x.png";
   min-height: 100vh;
@@ -38,4 +37,10 @@
   left: 0%;
   color: rgb(145, 56, 141);
   cursor: grab;
+}
+.skills {
+  border: 2px solid red;
+  border-radius: 1cm;
+  padding: 1% 4%;
+  margin: 1%;
 }
