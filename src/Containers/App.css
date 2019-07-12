@@ -8,10 +8,8 @@
   top: 0%;
   left: 0.1%;
 }
-.App-logo1 {
-  color: yellowgreen;
-  cursor: grab;
-}
+
+
 .App-header {
   background-image: "/home/shitiz/Pictures/x.png";
   min-height: 100vh;
@@ -32,5 +30,12 @@
   }
 }
 .App-link {
+  color: rgb(150, 56, 141);
+}
+.p1 {
+  border: 2px solid black;
+  bottom: 0%;
+  left: 0%;
   color: rgb(145, 56, 141);
+  cursor: grab;
 }

@@ -1,15 +1,17 @@
 .clock-pos {
   color: cyan;
-  border-block-end-width: 2px solid white;
+  border-style: inset;
+  border-block-end-width: 1px solid white;
   position: absolute;
   top: 0.5%;
   right: 0;
   background-color: black;
-  margin: 20 px auto;
-  padding: 16px;
+  margin: 10 px auto;
+  padding: 1px 1px;
   text-align: center;
   background: #2db34a;
   border-radius: 4cm;
+  font-size: 75%;
 }
 .name-pos {
   position: absolute;
@@ -27,4 +29,9 @@
   position: absolute;
   top: 7%;
   left: 0%;
+}
+.App-logo1 {
+  border: 2px solid black;
+  box-shadow: red;
+  color: blueviolet;
 }

@@ -4,9 +4,6 @@ code {
 div {
   color: aqua;
 }
-body {
-  background-color: teal;
-}
 button {
   margin: 20px;
   background-color: white;
@@ -15,6 +12,8 @@ button {
   font-size: x-large;
   border-radius: 2cm;
   padding: 5px 30px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
 /*button on hover*/
@@ -30,4 +29,8 @@ input[type="text"] {
 
 input[type="text"]:focus {
   width: 100%;
+}
+body {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
